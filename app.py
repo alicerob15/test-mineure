@@ -9,6 +9,8 @@ feature_names = load_wine().feature_names
 st.title('Bonjour !')
 
 df = pd.DataFrame(values, columns=feature_names)
-
+plot = df ['alcohol']
+st.write('voici le graphique de la colonne alcohol)
+st.line_chart(plot)
 df
 
